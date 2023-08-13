@@ -1,0 +1,16 @@
+[package]
+name = "pong_game"
+version = "0.1.0"
+authors = ["Tu Nombre <tu@email.com>"]
+edition = "2018"
+
+[dependencies]
+ggez = "0.5"
+nalgebra = "0.23"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[profile.dev]
+panic = "abort"
